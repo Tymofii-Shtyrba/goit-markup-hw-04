@@ -11,6 +11,8 @@
     --underline-color: #ECECEC;
     --border-color: #EEEEEE;
     --overlay-color: rgba(47, 48, 58, 0.4);
+    --social-link-color: #AFB1B8;
+    --basement-social-link-color: rgba(255, 255, 255, 0.1);
 }
 
 /*Global_styles*/
@@ -136,10 +138,44 @@ img {
 .contacts-nav:hover,
 .contacts-nav:focus {
     color: var(--first-logo-color);
+} 
+
+
+.contacts-icon {
+    width: 12px;
+    height: 16px;
+    fill: var(--descriprion-color);
 }
 
 .list-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.envelope-icon {
+    fill: var(--descriprion-color);
+    margin-right: 10px;
+}
+
+.smartphone-icon {
+    fill: var(--descriprion-color);
+    margin-right: 10px;
+}
+
+.contacts-nav:hover .envelope-icon {
+    fill: var(--first-logo-color
+    )
+}
+
+.contacts-nav:focus .envelope-icon {
+    fill: var(--first-logo-color)
+}
+
+.contacts-nav:hover .smartphone-icon {
+    fill: var(--first-logo-color);
+}
+
+.contacts-nav:focus .smartphone-icon {
+    fill: var(--first-logo-color);
 }
 
 /*Face*/
@@ -202,14 +238,14 @@ img {
 .features-container {
     margin: 0px auto;
     width: 1200px;
-    padding: 0px 15px;
-    /* outline: red solid 1px; */
 
 }
 
 .feature {
     width: 270px;
 }
+
+
 
 .visually-hidden {
     position: absolute;
@@ -224,6 +260,25 @@ img {
     clip: rect( 0 0 0 0);
     overflow: hidden   ;
 }
+
+.icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--team-section-color);
+}
+
+.icon-contain {
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-section-color);
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+
+
+
 
 .feature-title {
     font-weight: 700;
@@ -336,6 +391,35 @@ img {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.socials-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.social-icon {
+    fill: var(--social-link-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--first-logo-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--main-color);
 }
 
 /*Basement*/
@@ -344,12 +428,67 @@ img {
     margin: 0px auto;
     width: 1200px;
     padding: 0px 15px;
+    display: flex;
+    align-items: baseline;
     /* outline: red solid 1px; */
 }
 
 .basement {
     background: var(--second-color);
     padding: 60px 0px;
+}
+
+/* Clients_section*/
+
+.clients-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    text-decoration: none;
+    display: flex;
+    gap: 30px;
+}
+
+.link-client {
+    width: 170px;
+    height: 92px;
+    border: solid 1px var(--social-link-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.client-logo {
+    fill: var(--social-link-color);
+}
+
+.link-client:hover {
+    border-color: var(--first-logo-color);
+}
+
+.link-client:hover .client-logo {
+    fill: var(--first-logo-color);
+}
+
+.link-client:focus {
+    border-color: var(--first-logo-color);
+}
+
+.link-client:focus .client-logo {
+    fill: var(--first-logo-color);
 }
 
 /*Basement_logo*/
@@ -394,6 +533,44 @@ img {
 .contact-second-color:hover,
 .contact-second-color:focus {
     color:  var(--first-logo-color);
+}
+
+.address-container {
+    margin-right: 70px;
+}
+
+.invite-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.invite-list {
+    display: flex;
+}
+
+.basement-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background: var(--basement-social-link-color);
+    margin-right: 10px;
+}
+
+.basement-social-icon {
+    fill: var(--main-color);
+}
+
+.basement-social-link:hover,
+.basement-social-link:focus {
+    background-color: var(--first-logo-color);
 }
 
 /*PORTFOLIO_PAGE_STYLES*/
