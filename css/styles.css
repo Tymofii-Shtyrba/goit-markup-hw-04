@@ -13,6 +13,7 @@
     --overlay-color: rgba(47, 48, 58, 0.4);
     --social-link-color: #AFB1B8;
     --basement-social-link-color: rgba(255, 255, 255, 0.1);
+    --face-background: #C4C4C4;
 }
 
 /*Global_styles*/
@@ -133,6 +134,8 @@ img {
 .contacts-nav {
     color: var(--descriprion-color);
     padding: 32px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .contacts-nav:hover,
@@ -188,7 +191,7 @@ img {
 }
 
 .face {
-    background: var(--second-color);
+    background-color: var(--face-background);
     color: var(--main-color);
     text-align: center;
     background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), 
@@ -197,7 +200,6 @@ img {
     background-position: center;
     background-size: cover;
     max-width: 1600px;
-    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -271,7 +273,9 @@ img {
     width: 270px;
     height: 120px;
     background-color: var(--team-section-color);
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
 }
@@ -551,6 +555,7 @@ img {
 
 .invite-list {
     display: flex;
+    gap: 10px;
 }
 
 .basement-social-link {
@@ -561,7 +566,6 @@ img {
     border-radius: 50%;
     justify-content: center;
     background: var(--basement-social-link-color);
-    margin-right: 10px;
 }
 
 .basement-social-icon {
@@ -629,14 +633,14 @@ img {
     gap: 30px;
 }
 
-.project-item:hover {
+.project-item:hover,
+.project-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .description-box {
-    /* outline: solid rebeccapurple 1px; */
     padding: 20px 24px;
     border-right: solid 1px var(--border-color);
     border-bottom: solid 1px var(--border-color);
